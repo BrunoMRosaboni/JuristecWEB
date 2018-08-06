@@ -1,0 +1,74 @@
+/* Estilo */
+
+body {
+	font-family: Tahoma;
+	padding: 10px;
+	background: #F1F1F1;
+}
+
+/*Cabeçalho*/
+.header {
+	background-color: #F1F1F1;
+	text-align: center;
+	padding: 20px;
+}
+
+/*Barra de navegação superior*/
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Colunas corpo */
+
+.column {
+	float: left;
+}
+
+.topico {
+	text-align: center;
+}
+
+/* Colunas direita e esquerda */
+.column.side {
+	width: 27%;
+	background-color:#ccc;
+}
+
+/* Coluna central*/
+.column.middle {
+	width: 46%;
+	background-color:#aaa;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	.column.side, .column.middle {
+		width: 100;
+	}
+}
+
+.footer {
+	background-color: lightgrey;
+	text-align: center;
+	padding: 10px;
+}
